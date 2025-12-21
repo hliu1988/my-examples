@@ -1,0 +1,8 @@
+file ./mytest
+breakpoint main.main
+
+layout split
+layout reg
+display/i $pc
+
+run

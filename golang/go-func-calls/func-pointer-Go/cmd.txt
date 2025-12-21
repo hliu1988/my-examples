@@ -1,0 +1,5 @@
+file ./mytest
+b main.main
+layout split
+layout reg
+display/i $pc
