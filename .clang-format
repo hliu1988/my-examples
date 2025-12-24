@@ -138,7 +138,7 @@ RemoveBracesLLVM: false
 SeparateDefinitionBlocks: Leave
 ShortNamespaceLines: 1
 SortIncludes:    CaseSensitive
-SortJavaStaticImport: Beforeg
+SortJavaStaticImport: Before
 SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
