@@ -1,12 +1,12 @@
 
 all: c cpp
 
-c: hw.c
-	gcc -O3 hw.c -o hello
+c: hello.c
+	gcc -O3 hello.c -o hello
 	./hello James
 
-cpp: hw.cpp
-	g++ -O3 hw.cpp -o hello
+cpp: hello.cpp
+	g++ -O3 hello.cpp -o hello
 	./hello James
 
 clean:
