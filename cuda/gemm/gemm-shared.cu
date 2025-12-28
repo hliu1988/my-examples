@@ -17,6 +17,10 @@ __device__ void SetElement(Matrix A, int row, int col,
 {
     A.elements[row * A.stride + col] = value;
 }
+
+// Thread block size
+#define BLOCK_SIZE 16
+
 // Get the BLOCK_SIZExBLOCK_SIZE sub-matrix Asub of A that is
 // located col sub-matrices to the right and row sub-matrices down
 // from the upper-left corner of A
@@ -30,8 +34,6 @@ __device__ void SetElement(Matrix A, int row, int col,
                                          + BLOCK_SIZE * col];
     return Asub;
 }
-// Thread block size
-#define BLOCK_SIZE 16
 // Forward declaration of the matrix multiplication kernel
 __global__ void MatMulKernel(const Matrix, const Matrix, Matrix);
 // Matrix multiplication - Host code
